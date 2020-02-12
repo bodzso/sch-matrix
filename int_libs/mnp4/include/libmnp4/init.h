@@ -22,8 +22,6 @@
 
 void MNP4_EXPORT libmnp_init(QVariant(*)(QString));
 void MNP4_EXPORT libmnp_shutdown();
-void MNP4_EXPORT libmnp_start_server();
-void MNP4_EXPORT libmnp_start_client(const QHostAddress&);
 
 //megírják helyetted a singleton részt
 

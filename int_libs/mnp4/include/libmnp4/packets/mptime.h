@@ -27,7 +27,6 @@
  */
 class MNP4_EXPORT MPTime : public MPacket
 {
-DECLARE_MNP_PACKET(MPTime);
 protected:
     bool load2(QByteArray) override;
     QByteArray save2() override;

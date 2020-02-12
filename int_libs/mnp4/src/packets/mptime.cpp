@@ -17,8 +17,6 @@
 
 #include "libmnp4/packets/mptime.h"
 
-DEFINE_MNP_PACKET(MPTime);
-
 MPTime::MPTime()
     :MPacket("TIME"),phase(0),field1(0),field2(0)
 {

@@ -20,7 +20,6 @@
 #include "schwindow.h"
 #include "textrenderdialog.h"
 #include "libmnp4/core/mcconfig.h"
-#include "libmnp4/packets/mpframe.h"
 
 /*const*/ uint SchWidget::WIDTH=0;
 /*const*/ uint SchWidget::HEIGHT=0;
@@ -68,8 +67,8 @@ void SchWidget::unHighLightWindow(QPoint pos)
 void SchWidget::init()
 {
     //a main.cpp tömi bele, tuti jó lesz
-    WIDTH=MCConfig::query(MPFrame::WIDTH_QUERY).toUInt();
-    HEIGHT=MCConfig::query(MPFrame::HEIGHT_QUERY).toUInt();
+    WIDTH=MCConfig::query("libmnp4.frame.width").toUInt();
+    HEIGHT=MCConfig::query("libmnp4.frame.height").toUInt();
 }
 
 void SchWidget::ctor()

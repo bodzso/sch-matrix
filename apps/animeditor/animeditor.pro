@@ -82,7 +82,7 @@ TRANSLATIONS += animeditor_hu.ts
 LIBS += -L$$matrix_top_dir/ext_libs/lua/src -llua
 unix:LIBS += -ldl
 
-QT = core widgets svg network
+QT = core widgets svg
 PRECOMPILED_HEADER = src/pch.h
 
 mtx_static:QTPLUGIN += qsvg

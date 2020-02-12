@@ -74,13 +74,9 @@ int main(int argc,char** argv)
 
     if(!english)
     {
-        QTranslator qtTrans;
-        qtTrans.load(":/qt_hu");
-        app.installTranslator(&qtTrans);
-        
-        QTranslator myTrans;
-        myTrans.load(":/animeditor_hu");
-        app.installTranslator(&myTrans);
+        auto myTrans = new QTranslator(&app);
+        myTrans->load(":/animeditor_hu");
+        app.installTranslator(myTrans);
     }
     }
 

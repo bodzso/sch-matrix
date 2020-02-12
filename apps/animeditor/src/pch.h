@@ -17,5 +17,4 @@
 
 #include <QtCore>
 #include <QtWidgets>
-#include <QtNetwork>
 #include <fmod.h>

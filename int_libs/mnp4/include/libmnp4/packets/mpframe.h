@@ -30,7 +30,6 @@
  */
 class MNP4_EXPORT MPFrame : public MPacket
 {
-DECLARE_MNP_PACKET(MPFrame);
 private:
     void ctor();
     void copy(const MPFrame&);

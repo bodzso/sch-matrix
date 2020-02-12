@@ -19,7 +19,6 @@
 #define	LIBMNP_MCTIME_H
 
 #include "libmnp4/global.h"
-#include "libmnp4/packets/mpacket.h"
 #include "libmnp4/init.h"
 
 /**
@@ -40,18 +39,6 @@ DECLARE_MNP_INITIALIZABLE(MCTime);
     qint64 delta_; ///< Ennyi időkorrekció megy rá a core timerre.
     QTimer* sync_tick_; ///< A folyamatos szinkronizációt vezérlő timer.
 
-    static const int MEASUREMENT_COUNT=11; ///< Ennyi mérést várunk be
-
-    /**
-     * Mérési eredményt tároló struct.
-     */
-    struct Measurement
-    {
-        qint64 delta;
-        qint64 rtt;
-    } measurements_[MEASUREMENT_COUNT]; ///< A mérési eredményeket tároló tömb.
-    int meas_ptr_; ///< A beérkezett mérések számát tárolja.
-
     MCTime();
     ~MCTime();
     void run() override;
@@ -61,11 +48,6 @@ DECLARE_MNP_INITIALIZABLE(MCTime);
      * ezredmásodpercenként eggyel növekvő 64 bites értéket állítson elő.
      */
     qint64 getTimeMsCore();
-    void evaluateMeasurements();
-private slots:
-    void packetReceived(QSharedPointer<const MPacket>,QHostAddress);
-    void startSyncing2();
-    void syncTick();
 public:
     static void startSyncing();
     static qint64 getTimeMs();

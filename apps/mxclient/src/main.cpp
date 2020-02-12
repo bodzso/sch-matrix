@@ -21,8 +21,9 @@
 
 /*
  * Kliens-specifikus MCConfig-beállítások:
- * mxclient.initial_dir - nem kötelező, a playlistet feltölti innen minden induláskor
- * mxcleint.server_ip - nem kötelező, a szerver IP címét lehet előre kitöltetni vele 
+ * mxclient.initial_dir - nem kötelező, a playlistet feltölti innen minden
+ * induláskor mxcleint.server_ip - nem kötelező, a szerver IP címét lehet előre
+ * kitöltetni vele
  */
 
 #ifdef MTX_QT_IS_STATIC
@@ -33,57 +34,50 @@ Q_IMPORT_PLUGIN(qsvg);
 #include <windows.h>
 #endif
 
-void messageHandler(QtMsgType type,const char* msg)
-{
-    switch(type)
-    {
-        case QtDebugMsg:
-        case QtWarningMsg:
-            fprintf(stderr,"%s\n",msg);
-            return;
-        case QtCriticalMsg:
-        case QtFatalMsg:
-            fprintf(stderr,"!!!> %s\n",msg);
+void messageHandler(QtMsgType type, const char* msg) {
+  switch (type) {
+    case QtDebugMsg:
+    case QtWarningMsg:
+      fprintf(stderr, "%s\n", msg);
+      return;
+    case QtCriticalMsg:
+    case QtFatalMsg:
+      fprintf(stderr, "!!!> %s\n", msg);
 #ifdef Q_OS_WIN32
-            //QMessageBox beszól, mert potenciálisan rossz szálon vagyunk
-            MessageBoxA(NULL,msg,"Halalvan==true",MB_OK);
+      // QMessageBox beszól, mert potenciálisan rossz szálon vagyunk
+      // MessageBoxA(NULL,msg,"Halalvan==true",MB_OK);
 #endif
-            QApplication::quit();
-    }
+      QApplication::quit();
+  }
 }
 
-static QSettings globalsettings("libmnp4.ini",QSettings::IniFormat);
-static QSettings localsettings("mxclient.ini",QSettings::IniFormat);
+static QSettings globalsettings("libmnp4.ini", QSettings::IniFormat);
+static QSettings localsettings("mxclient.ini", QSettings::IniFormat);
 
-static QVariant readSetting(QString key)
-{
-    qDebug()<<"Reading setting "<<key;
-    key.replace('.','/');
-    QVariant retval=localsettings.value(key);
-    if(retval.isNull())
-    {
-        retval=globalsettings.value(key);
-    }
-    return retval;
+static QVariant readSetting(QString key) {
+  qDebug() << "Reading setting " << key;
+  key.replace('.', '/');
+  QVariant retval = localsettings.value(key);
+  if (retval.isNull()) {
+    retval = globalsettings.value(key);
+  }
+  return retval;
 }
 
-int main(int argc,char** argv)
-{
-    QApplication app(argc,argv);
-    //qInstallMsgHandler(&messageHandler);
-    
-    libmnp_init(&readSetting);
-    
-    MainWindow m;
-    
-    if(!MPFrame::WIDTH)
-    {
-        QMessageBox::critical(&m,QObject::tr("libmnp4 error"),
-                              QObject::tr("Couldn't initialize MPFrame--"
-                                           "do you have a libmnp4.ini?"));
-        return 1;
-    }
+int main(int argc, char** argv) {
+  QApplication app(argc, argv);
+  // qInstallMsgHandler(&messageHandler);
 
+  libmnp_init(&readSetting);
 
-    return app.exec();
+  MainWindow m;
+
+  if (!MPFrame::WIDTH) {
+    QMessageBox::critical(&m, QObject::tr("libmnp4 error"),
+                          QObject::tr("Couldn't initialize MPFrame--"
+                                      "do you have a libmnp4.ini?"));
+    return 1;
+  }
+
+  return app.exec();
 }

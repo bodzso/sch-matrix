@@ -19,7 +19,6 @@
 #define	LIBMNP_GLOBAL_H
 
 #include <QtCore>
-#include <QtNetwork>
 
 //kódszépítő makrók
 #define ownership //azt jelzi, hogy a pointerrel a tulajdonjog is megy

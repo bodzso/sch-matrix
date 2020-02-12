@@ -18,8 +18,6 @@
 #include "libmnp4/packets/mpframe.h"
 #include "libmnp4/core/mcconfig.h"
 
-DEFINE_MNP_PACKET(MPFrame);
-
 const QString MPFrame::WIDTH_QUERY("libmnp4.frame.width");
 const QString MPFrame::HEIGHT_QUERY("libmnp4.frame.height");
 /*const*/ int MPFrame::WIDTH=0;
