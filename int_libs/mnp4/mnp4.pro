@@ -1,5 +1,6 @@
 TEMPLATE = lib
 TARGET = mnp4
+CONFIG += staticlib
 INCLUDEPATH += . \
                src \
                include/libmnp4 \

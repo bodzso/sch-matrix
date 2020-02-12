@@ -23,10 +23,14 @@
 //kódszépítő makrók
 #define ownership //azt jelzi, hogy a pointerrel a tulajdonjog is megy
 
+#ifdef DLL_CONFIG
 #ifdef MNP4_LIBRARY
 #define MNP4_EXPORT Q_DECL_EXPORT
 #else
 #define MNP4_EXPORT Q_DECL_IMPORT
+#endif
+#else
+#define MNP4_EXPORT
 #endif
 
 #endif
