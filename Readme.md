@@ -17,6 +17,10 @@ Qt Creatorral is ugyanúgy fog menni minden mint parancssorból.
 
 A magyar fordításhoz szükséges az apps/animeditor/ mappában futtatni az `lupdate`, `lrelease` parancsot. Ezt a Qt-s környezeti változókkal rendelkező parancssorból vagy Qt Creatoron belül a Tools/External/Linguist menü alatt tehetjük meg.
 
+A régi FMOD Ex-et belehet innen szerezni: https://zdoom.org/files/fmod/
+
+Egyéb jelenlegi mátrix rendezők által ismert helyen is megtalálható lesz.
+
 Ami kell
 --------
 
