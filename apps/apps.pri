@@ -4,6 +4,7 @@ INCLUDEPATH += \
     $$matrix_top_dir/ext_libs/fmodex/api/inc \
 
 LIBS += -L$$matrix_top_dir/dist -lmnp4 -lqtiocompressor
++unix:LIBS += -lz
 
 LIBS += -L$$matrix_top_dir/ext_libs/fmodex/api/lib
 unix:LIBS += -lfmodex64
