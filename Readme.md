@@ -7,6 +7,16 @@ plusz dokumentáció.
 **FIGYELEM**: Az itt található AnimEditor nem teljesen kompatibilis a 2012-essel,
 amíg az van hivatalosan használatban, abból kell exportálni az animációt beadáshoz!
 
+## Release update
+
+**Ez a branch a régi AnimEditor hálózattól teljesen függetlenített változatát adja.**
+
+Az mnp4 library static lett ki lett belőle törölve minden, ami nem kellett. Más alkalmazások amik függtek az  mnp4-től és a hálózattól nem fognak működni. Itt ezzel nem foglalkozunk.
+
+Qt Creatorral is ugyanúgy fog menni minden mint parancssorból.
+
+A magyar fordításhoz szükséges az apps/animeditor/ mappában futtatni az `lupdate`, `lrelease` parancsot. Ezt a Qt-s környezeti változókkal rendelkező parancssorból vagy Qt Creatoron belül a Tools/External/Linguist menü alatt tehetjük meg.
+
 Ami kell
 --------
 
