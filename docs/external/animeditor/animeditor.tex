@@ -1,5 +1,8 @@
 \documentclass[a4paper,12pt,release]{article}
 
+\title{AnimEditor használati útmutató}
+\date{Frissítve: 2020.02.13.}
+
 \def\magyarOptions{defaults=hu-min}
 \usepackage[utf8]{inputenc} %Tudok ékezetes karaktereket írni
 \usepackage[T1]{fontenc} %Ez talán a babelnek kell...
@@ -12,11 +15,23 @@
 \usepackage{setspace} %Sorközöket kezel
 \usepackage{multicol} %hasábol
 \usepackage{hyperref}
+\usepackage{titling}
+\renewcommand\maketitlehooka{\null\mbox{}\vfill}
+\renewcommand\maketitlehookd{\vfill\null}
+
+\addto\captionsenglish{
+	\renewcommand{\contentsname}%
+	{Tartalom}%
+}
 
 %-------------------------------------------------------------------------------
 \marginsize{1cm}{1cm}{0cm}{1cm}
 %-------------------------------------------------------------------------------
 \begin{document}
+\maketitle
+\newpage
+\tableofcontents
+\clearpage
 \section{Gyors referencia}
 \includegraphics[width=0.9\textwidth]{pics/main.jpg}\\
 \begin{multicols}{3}
@@ -58,8 +73,6 @@
 \item[z]Aktuális képkockán levő rajz eltávolítása
 \end{itemize}
 \end{multicols}
-\clearpage
-\tableofcontents
 \clearpage
 \section{Az AnimEditor használata}
 Az első oldalon megtalálható a gombok rövid leírása, ezt nem árt magadnál tartani olvasás közben. A program használata közben azonban nem kell egyfolytában ide visszajönnöd, ugyanis minden gombhoz tartozik tooltip, mely emlékeztet a gomb funkciójára.
@@ -237,7 +250,20 @@ rootclip("main")
 Kész is vagy. A biztonság kedvéért nézd meg az AnimEditorban is az animációt, mielőtt exportálod!
 \clearpage
 \subsection{QP4 programozóknak}
-A QP4 Lua 5.2.0 bétával fut. Fontos újítása az 5.2-nek, hogy függvényenként már $2^{26}$ konstans áll rendelkezésre, illetve már beépítve is találhatóak bitműveletek. Rendelkezésedre állnak a base, package, coroutine, table, string, bit32, math könyvtárak.
+A QP4 Lua 5.3.5-el fut. A Luát update-eltem 5.3.5-re a 2012-es állapothoz képest, ez a bit32 libraryt megszünteti, ami eltörhet egyes régi animációkat. A Q4X formátum ezért verziót lépett 2-re.
+\\
+\\Ez egy lehetséges workaround régi animációkhoz, ha berakod a .qp4 elejére:
+\begin{verbatim}
+local bit32 = bit32 or load([[return {
+band = function(a, b) return a & b end,
+bor = function(a, b) return a | b end,
+bxor = function(a, b) return a ~ b end,
+bnot = function(a) return ~a end,
+rshift = function(a, n) return a >> n end,
+lshift = function(a, n) return a << n end,
+}]])()
+\end{verbatim}
+Fontos újítása az 5.2-nek, hogy függvényenként már $2^{26}$ konstans áll rendelkezésre, illetve már beépítve is találhatóak bitműveletek. Rendelkezésedre állnak a base, package, coroutine, table, string, math könyvtárak.
 A következő globális függvényekkel kapcsolódhatsz az AnimEditorhoz:
 \begin{description}
 \item[debug(string)]A paraméterként átadott stringet megjeleníti betöltés után ({\bf Vigyázat!} Sok debug()-hívás nagyon lassú is lehet!)
