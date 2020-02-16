@@ -45,8 +45,13 @@
 ****************************************************************************/
 
 #include "qtiocompressor.h"
-#include "zlib.h"
+
 #include <QtCore/QDebug>
+#if defined(Q_OS_WINDOWS)
+#include <QtZlib/zlib.h>
+#else
+#include <zlib.h>
+#endif
 
 typedef Bytef ZlibByte;
 typedef uInt ZlibSize;

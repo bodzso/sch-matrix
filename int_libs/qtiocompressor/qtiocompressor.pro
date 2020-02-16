@@ -3,8 +3,6 @@ TARGET = qtiocompressor
 DEPENDPATH += .
 INCLUDEPATH += .
 
-INCLUDEPATH += $$[QT_INSTALL_PREFIX]/include/QtZlib
-
 # Input
 HEADERS += qtiocompressor.h
 SOURCES += qtiocompressor.cpp
