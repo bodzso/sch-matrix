@@ -50,15 +50,21 @@ AboutWindow::AboutWindow(QWidget* parent/*=NULL*/)
                             "Copyright © 1994-2015 Lua.org, PUC-Rio.<br><br>")+
                             //ezt meg az Oxygen licenc miatt
                             tr("Uses <a href=\"http://www.oxygen-icons.org/\">"
-                            "Oxygen Icons</a>.<br>")
+                            "Oxygen Icons</a>.<br><br>")+
+                            tr("This version is built by Zsombor Bodnár(bodzso) <a href=\"http://kszk.bme.hu/\">kszk.bme.hu</a>.")
                          ).arg(names.join(tr(", "))),this);
     aboutQt_=new QPushButton(tr("About Qt..."),this);
     aboutLua_=new QPushButton(tr("About Lua..."),this);
     ok_=new QPushButton(tr("OK"),this);
+
+    m_gif.setMovie(&m_gifPlayer);
+    m_gifPlayer.start();
+
     layout_->addWidget(mainText_,0,0,1,3);
-    layout_->addWidget(aboutQt_,1,0,1,1);
-    layout_->addWidget(aboutLua_,1,1,1,1);
-    layout_->addWidget(ok_,1,2,1,1);
+    layout_->addWidget(&m_gif, 1, 1);
+    layout_->addWidget(aboutQt_,2,0,1,1);
+    layout_->addWidget(aboutLua_,2,1,1,1);
+    layout_->addWidget(ok_,2,2,1,1);
 
     connect(mainText_,SIGNAL(linkActivated(const QString&)),
             this,SLOT(linkClicked(const QString&)));

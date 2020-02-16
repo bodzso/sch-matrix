@@ -29,6 +29,8 @@ Q_OBJECT
     QPushButton* aboutQt_;
     QPushButton* aboutLua_;
     QPushButton* ok_;
+    QLabel m_gif;
+    QMovie m_gifPlayer{":/matrix.gif"};
 public:
     AboutWindow(QWidget* parent=NULL);
 public slots:

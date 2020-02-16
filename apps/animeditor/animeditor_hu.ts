@@ -15,58 +15,65 @@
     <message>
         <location filename="src/gui/aboutwindow.cpp" line="39"/>
         <source>&lt;h1&gt;Matrix AnimEditor 2018&lt;/h1&gt;&lt;h3&gt;By %1&lt;/h3&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;h1&gt;Matrix AnimEditor 2018&lt;/h1&gt;&lt;h3&gt;Készítette %1&lt;/h3&gt;</translation>
     </message>
     <message>
         <location filename="src/gui/aboutwindow.cpp" line="42"/>
         <source>&lt;h4&gt;Powered by &lt;a href=&quot;http://z0r.de/1384&quot;&gt;Tree-DAG™&lt;/a&gt;&lt;/h4&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="src/gui/aboutwindow.cpp" line="45"/>
         <source>Uses &lt;a href=&quot;http://www.fmod.org/&quot;&gt;FMOD Sound System&lt;/a&gt;, copyright © Firelight Technologies Pty, Ltd., 1994-2012.&lt;br&gt;&lt;br&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>Használja a(z) &lt;a href=&quot;http://www.fmod.org/&quot;&gt;FMOD Sound System&lt;/a&gt;, copyright © Firelight Technologies Pty, Ltd., 1994-2012.&lt;br&gt;&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="src/gui/aboutwindow.cpp" line="49"/>
         <source>Uses &lt;a href=&quot;http://www.lua.org/&quot;&gt;Lua&lt;/a&gt;, Copyright © 1994-2015 Lua.org, PUC-Rio.&lt;br&gt;&lt;br&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>Használja a(z) &lt;a href=&quot;http://www.lua.org/&quot;&gt;Lua&lt;/a&gt;, Copyright © 1994-2015 Lua.org, PUC-Rio.&lt;br&gt;&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="src/gui/aboutwindow.cpp" line="52"/>
-        <source>Uses &lt;a href=&quot;http://www.oxygen-icons.org/&quot;&gt;Oxygen Icons&lt;/a&gt;.&lt;br&gt;</source>
-        <translation></translation>
+        <source>Uses &lt;a href=&quot;http://www.oxygen-icons.org/&quot;&gt;Oxygen Icons&lt;/a&gt;.&lt;br&gt;&lt;br&gt;</source>
+        <oldsource>Uses &lt;a href=&quot;http://www.oxygen-icons.org/&quot;&gt;Oxygen Icons&lt;/a&gt;.&lt;br&gt;</oldsource>
+        <translation>Használja a(z) &lt;a href=&quot;http://www.oxygen-icons.org/&quot;&gt;Oxygen Icons&lt;/a&gt;.&lt;br&gt;&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="src/gui/aboutwindow.cpp" line="54"/>
+        <source>This version is built by Zsombor Bodnár(bodzso) &lt;a href=&quot;http://kszk.bme.hu/&quot;&gt;kszk.bme.hu&lt;/a&gt;.</source>
+        <oldsource>This version is built by Zsombor Bodnár(bodzso) &lt;a href=&quot;http://kszk.bme.hu/&quot;&gt;kszk.bme.hu&lt;/a&gt;</oldsource>
+        <translation>Ezt a verziót Bodnár Zsombor(bodzso) &lt;a href=&quot;http://kszk.bme.hu/&quot;&gt;kszk.bme.hu&lt;/a&gt; fordította.</translation>
+    </message>
+    <message>
+        <location filename="src/gui/aboutwindow.cpp" line="55"/>
         <source>, </source>
         <translation></translation>
     </message>
     <message>
-        <location filename="src/gui/aboutwindow.cpp" line="55"/>
+        <location filename="src/gui/aboutwindow.cpp" line="56"/>
         <source>About Qt...</source>
         <translation>A Qt névjegye...</translation>
     </message>
     <message>
-        <location filename="src/gui/aboutwindow.cpp" line="56"/>
+        <location filename="src/gui/aboutwindow.cpp" line="57"/>
         <source>About Lua...</source>
         <translation>A Lua névjegye...</translation>
     </message>
     <message>
-        <location filename="src/gui/aboutwindow.cpp" line="57"/>
-        <location filename="src/gui/aboutwindow.cpp" line="100"/>
+        <location filename="src/gui/aboutwindow.cpp" line="58"/>
+        <location filename="src/gui/aboutwindow.cpp" line="101"/>
         <source>OK</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="src/gui/aboutwindow.cpp" line="75"/>
+        <location filename="src/gui/aboutwindow.cpp" line="76"/>
         <source>Copyright © 1994-2015 Lua.org, PUC-Rio.
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
 </context>
 <context>

@@ -48,5 +48,6 @@
         <file alias="icons/copy.svg">../../resources/icons/edit-copy.svg</file>
         <file alias="icons/paste.svg">../../resources/icons/edit-paste.svg</file>
         <file>animeditor_hu.qm</file>
+        <file>matrix.gif</file>
     </qresource>
 </RCC>
