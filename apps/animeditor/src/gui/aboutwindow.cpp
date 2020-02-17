@@ -36,7 +36,7 @@ AboutWindow::AboutWindow(QWidget* parent/*=NULL*/)
     {
         std::swap(names[i],names[rand()%names.size()]);
     }
-    mainText_=new QLabel((tr("<h1>Matrix AnimEditor 2018</h1>"
+    mainText_=new QLabel((tr("<h1>Matrix AnimEditor 2020</h1>"
                             "<h3>By %1</h3>")+
                             //miért ne?
                             tr("<h4>Powered by <a href=\"http://z0r.de/1384\">"
@@ -51,6 +51,7 @@ AboutWindow::AboutWindow(QWidget* parent/*=NULL*/)
                             //ezt meg az Oxygen licenc miatt
                             tr("Uses <a href=\"http://www.oxygen-icons.org/\">"
                             "Oxygen Icons</a>.<br><br>")+
+                            tr("Original source code can be found here: <a href=\"https://github.com/lcsondes/sch-matrix/\">https://github.com/lcsondes/sch-matrix</a>.<br><br>")+
                             tr("This version is built by Zsombor Bodnár(bodzso) <a href=\"http://kszk.bme.hu/\">kszk.bme.hu</a>.")
                          ).arg(names.join(tr(", "))),this);
     aboutQt_=new QPushButton(tr("About Qt..."),this);

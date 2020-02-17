@@ -14,8 +14,9 @@
     </message>
     <message>
         <location filename="src/gui/aboutwindow.cpp" line="39"/>
-        <source>&lt;h1&gt;Matrix AnimEditor 2018&lt;/h1&gt;&lt;h3&gt;By %1&lt;/h3&gt;</source>
-        <translation>&lt;h1&gt;Matrix AnimEditor 2018&lt;/h1&gt;&lt;h3&gt;Készítette %1&lt;/h3&gt;</translation>
+        <source>&lt;h1&gt;Matrix AnimEditor 2020&lt;/h1&gt;&lt;h3&gt;By %1&lt;/h3&gt;</source>
+        <oldsource>&lt;h1&gt;Matrix AnimEditor 2018&lt;/h1&gt;&lt;h3&gt;By %1&lt;/h3&gt;</oldsource>
+        <translation>&lt;h1&gt;Matrix AnimEditor 2020&lt;/h1&gt;&lt;h3&gt;Készítette %1&lt;/h3&gt;</translation>
     </message>
     <message>
         <location filename="src/gui/aboutwindow.cpp" line="42"/>
@@ -25,48 +26,54 @@
     <message>
         <location filename="src/gui/aboutwindow.cpp" line="45"/>
         <source>Uses &lt;a href=&quot;http://www.fmod.org/&quot;&gt;FMOD Sound System&lt;/a&gt;, copyright © Firelight Technologies Pty, Ltd., 1994-2012.&lt;br&gt;&lt;br&gt;</source>
-        <translation>Használja a(z) &lt;a href=&quot;http://www.fmod.org/&quot;&gt;FMOD Sound System&lt;/a&gt;, copyright © Firelight Technologies Pty, Ltd., 1994-2012.&lt;br&gt;&lt;br&gt;</translation>
+        <translation>Használja az &lt;a href=&quot;http://www.fmod.org/&quot;&gt;FMOD Sound System&lt;/a&gt;-et, copyright © Firelight Technologies Pty, Ltd., 1994-2012.&lt;br&gt;&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="src/gui/aboutwindow.cpp" line="49"/>
         <source>Uses &lt;a href=&quot;http://www.lua.org/&quot;&gt;Lua&lt;/a&gt;, Copyright © 1994-2015 Lua.org, PUC-Rio.&lt;br&gt;&lt;br&gt;</source>
-        <translation>Használja a(z) &lt;a href=&quot;http://www.lua.org/&quot;&gt;Lua&lt;/a&gt;, Copyright © 1994-2015 Lua.org, PUC-Rio.&lt;br&gt;&lt;br&gt;</translation>
+        <translation>Használja a &lt;a href=&quot;http://www.lua.org/&quot;&gt;Lua&lt;/a&gt;-t, Copyright © 1994-2015 Lua.org, PUC-Rio.&lt;br&gt;&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="src/gui/aboutwindow.cpp" line="52"/>
         <source>Uses &lt;a href=&quot;http://www.oxygen-icons.org/&quot;&gt;Oxygen Icons&lt;/a&gt;.&lt;br&gt;&lt;br&gt;</source>
         <oldsource>Uses &lt;a href=&quot;http://www.oxygen-icons.org/&quot;&gt;Oxygen Icons&lt;/a&gt;.&lt;br&gt;</oldsource>
-        <translation>Használja a(z) &lt;a href=&quot;http://www.oxygen-icons.org/&quot;&gt;Oxygen Icons&lt;/a&gt;.&lt;br&gt;&lt;br&gt;</translation>
-    </message>
-    <message>
-        <location filename="src/gui/aboutwindow.cpp" line="54"/>
-        <source>This version is built by Zsombor Bodnár(bodzso) &lt;a href=&quot;http://kszk.bme.hu/&quot;&gt;kszk.bme.hu&lt;/a&gt;.</source>
-        <oldsource>This version is built by Zsombor Bodnár(bodzso) &lt;a href=&quot;http://kszk.bme.hu/&quot;&gt;kszk.bme.hu&lt;/a&gt;</oldsource>
-        <translation>Ezt a verziót Bodnár Zsombor(bodzso) &lt;a href=&quot;http://kszk.bme.hu/&quot;&gt;kszk.bme.hu&lt;/a&gt; fordította.</translation>
+        <translation type="unfinished">Használja az &lt;a href=&quot;http://www.oxygen-icons.org/&quot;&gt;Oxygen Icons&lt;/a&gt;-t.&lt;br&gt;&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="src/gui/aboutwindow.cpp" line="55"/>
+        <source>This version is built by Zsombor Bodnár(bodzso) &lt;a href=&quot;http://kszk.bme.hu/&quot;&gt;kszk.bme.hu&lt;/a&gt;.</source>
+        <oldsource>This version is built by Zsombor Bodnár(bodzso) &lt;a href=&quot;http://kszk.bme.hu/&quot;&gt;kszk.bme.hu&lt;/a&gt;.&lt;br&gt;&lt;br&gt;</oldsource>
+        <translation>Ezt a verziót Bodnár Zsombor(bodzso) &lt;a href=&quot;http://kszk.bme.hu/&quot;&gt;kszk.bme.hu&lt;/a&gt; buildelte.</translation>
+    </message>
+    <message>
+        <location filename="src/gui/aboutwindow.cpp" line="54"/>
+        <source>Original source code can be found here: &lt;a href=&quot;https://github.com/lcsondes/sch-matrix/&quot;&gt;https://github.com/lcsondes/sch-matrix&lt;/a&gt;.&lt;br&gt;&lt;br&gt;</source>
+        <oldsource>Original source code can be found here: &lt;a href=&quot;https://github.com/lcsondes/sch-matrix/&quot;&gt;https://github.com/lcsondes/sch-matrix&lt;/a&gt;.</oldsource>
+        <translation>Az eredeti forráskód megtalálható itt: &lt;a href=&quot;https://github.com/lcsondes/sch-matrix/&quot;&gt;https://github.com/lcsondes/sch-matrix&lt;/a&gt;.&lt;br&gt;&lt;br&gt;</translation>
+    </message>
+    <message>
+        <location filename="src/gui/aboutwindow.cpp" line="56"/>
         <source>, </source>
         <translation></translation>
     </message>
     <message>
-        <location filename="src/gui/aboutwindow.cpp" line="56"/>
+        <location filename="src/gui/aboutwindow.cpp" line="57"/>
         <source>About Qt...</source>
         <translation>A Qt névjegye...</translation>
     </message>
     <message>
-        <location filename="src/gui/aboutwindow.cpp" line="57"/>
+        <location filename="src/gui/aboutwindow.cpp" line="58"/>
         <source>About Lua...</source>
         <translation>A Lua névjegye...</translation>
     </message>
     <message>
-        <location filename="src/gui/aboutwindow.cpp" line="58"/>
-        <location filename="src/gui/aboutwindow.cpp" line="101"/>
+        <location filename="src/gui/aboutwindow.cpp" line="59"/>
+        <location filename="src/gui/aboutwindow.cpp" line="107"/>
         <source>OK</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="src/gui/aboutwindow.cpp" line="76"/>
+        <location filename="src/gui/aboutwindow.cpp" line="82"/>
         <source>Copyright © 1994-2015 Lua.org, PUC-Rio.
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
@@ -119,7 +126,8 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     <name>MainWindow</name>
     <message>
         <location filename="src/gui/mainwindow.cpp" line="33"/>
-        <source>AnimEditor 2018</source>
+        <source>AnimEditor 2020</source>
+        <oldsource>AnimEditor 2018</oldsource>
         <translation></translation>
     </message>
     <message>
