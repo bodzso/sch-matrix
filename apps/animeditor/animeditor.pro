@@ -80,7 +80,11 @@ SOURCES += src/main.cpp \
 RESOURCES += gfx.qrc
 TRANSLATIONS += animeditor_hu.ts
 LIBS += -L$$matrix_top_dir/ext_libs/lua/src -llua
-unix:LIBS += -ldl
+
+unix {
+	LIBS += -ldl
+	QMAKE_RPATHDIR += $ORIGIN
+}
 
 QT = core widgets svg
 PRECOMPILED_HEADER = src/pch.h

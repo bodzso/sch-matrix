@@ -21,6 +21,8 @@ A régi FMOD Ex-et belehet innen szerezni: https://zdoom.org/files/fmod/
 
 Egyéb jelenlegi mátrix rendezők által ismert helyen is megtalálható lesz.
 
+Linuxon nem kell már **LD_LIBRARY_PATH**
+
 Ami kell
 --------
 
