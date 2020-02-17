@@ -74,6 +74,10 @@ int main(int argc,char** argv)
 
     if(!english)
     {
+        auto qtTrans = new QTranslator(&app);
+        qtTrans->load("qt_hu", "translations");
+        app.installTranslator(qtTrans);
+
         auto myTrans = new QTranslator(&app);
         myTrans->load(":/animeditor_hu");
         app.installTranslator(myTrans);
