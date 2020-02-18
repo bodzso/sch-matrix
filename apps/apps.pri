@@ -8,7 +8,14 @@ LIBS += -L$$matrix_top_dir/dist -lmnp4 -lqtiocompressor
 
 LIBS += -L$$matrix_top_dir/ext_libs/fmodex/api/lib
 unix:LIBS += -lfmodex64
-win32:LIBS += -lfmodex64_vc
+
+win32 {
+    !contains(QMAKE_TARGET.arch, x86_64) {
+        LIBS += -lfmodex_vc
+    } else {
+        LIBS += -lfmodex64_vc
+    }
+}
     
 QMAKE_RESOURCE_FLAGS += -threshold 0 -compress 9
 
