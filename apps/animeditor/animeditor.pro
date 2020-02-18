@@ -1,5 +1,7 @@
 TEMPLATE = app
 TARGET = animeditor
+CONFIG += c++11
+
 INCLUDEPATH += . \
                src \
                src/anim \

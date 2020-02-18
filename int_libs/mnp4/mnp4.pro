@@ -1,6 +1,7 @@
 TEMPLATE = lib
 TARGET = mnp4
-CONFIG += staticlib
+CONFIG += staticlib c++11
+
 INCLUDEPATH += . \
                src \
                include/libmnp4 \
