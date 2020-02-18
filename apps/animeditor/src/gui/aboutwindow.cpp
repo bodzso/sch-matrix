@@ -52,6 +52,7 @@ AboutWindow::AboutWindow(QWidget* parent/*=NULL*/)
                             tr("Uses <a href=\"http://www.oxygen-icons.org/\">"
                             "Oxygen Icons</a>.<br><br>")+
                             tr("Original source code can be found here: <a href=\"https://github.com/lcsondes/sch-matrix/\">https://github.com/lcsondes/sch-matrix</a>.<br><br>")+
+                            tr("Modified source code can be found here: <a href=\"https://git.sch.bme.hu/matrix-group/sch-matrix/\">https://git.sch.bme.hu/matrix-group/sch-matrix</a>.<br><br>")+
                             tr("This version is built by Zsombor Bodnár(bodzso) <a href=\"http://kszk.bme.hu/\">kszk.bme.hu</a>.")
                          ).arg(names.join(tr(", "))),this);
     aboutQt_=new QPushButton(tr("About Qt..."),this);

@@ -37,10 +37,16 @@
         <location filename="src/gui/aboutwindow.cpp" line="52"/>
         <source>Uses &lt;a href=&quot;http://www.oxygen-icons.org/&quot;&gt;Oxygen Icons&lt;/a&gt;.&lt;br&gt;&lt;br&gt;</source>
         <oldsource>Uses &lt;a href=&quot;http://www.oxygen-icons.org/&quot;&gt;Oxygen Icons&lt;/a&gt;.&lt;br&gt;</oldsource>
-        <translation type="unfinished">Használja az &lt;a href=&quot;http://www.oxygen-icons.org/&quot;&gt;Oxygen Icons&lt;/a&gt;-t.&lt;br&gt;&lt;br&gt;</translation>
+        <translation>Használja az &lt;a href=&quot;http://www.oxygen-icons.org/&quot;&gt;Oxygen Icons&lt;/a&gt;-t.&lt;br&gt;&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="src/gui/aboutwindow.cpp" line="55"/>
+        <source>Modified source code can be found here: &lt;a href=&quot;https://git.sch.bme.hu/matrix-group/sch-matrix/&quot;&gt;https://git.sch.bme.hu/matrix-group/sch-matrix&lt;/a&gt;.&lt;br&gt;&lt;br&gt;</source>
+        <oldsource>Modified source code can be found here: &lt;a href=&quot;https://github.com/lcsondes/sch-matrix/&quot;&gt;https://git.sch.bme.hu/matrix-group/sch-matrix&lt;/a&gt;.&lt;br&gt;&lt;br&gt;</oldsource>
+        <translation type="unfinished">A módosított  forráskód megtalálható itt: &lt;a href=&quot;https://git.sch.bme.hu/matrix-group/sch-matrix/&quot;&gt;https://git.sch.bme.hu/matrix-group/sch-matrix&lt;/a&gt;.&lt;br&gt;&lt;br&gt;</translation>
+    </message>
+    <message>
+        <location filename="src/gui/aboutwindow.cpp" line="56"/>
         <source>This version is built by Zsombor Bodnár(bodzso) &lt;a href=&quot;http://kszk.bme.hu/&quot;&gt;kszk.bme.hu&lt;/a&gt;.</source>
         <oldsource>This version is built by Zsombor Bodnár(bodzso) &lt;a href=&quot;http://kszk.bme.hu/&quot;&gt;kszk.bme.hu&lt;/a&gt;.&lt;br&gt;&lt;br&gt;</oldsource>
         <translation>Ezt a verziót Bodnár Zsombor(bodzso) &lt;a href=&quot;http://kszk.bme.hu/&quot;&gt;kszk.bme.hu&lt;/a&gt; buildelte.</translation>
@@ -52,28 +58,28 @@
         <translation>Az eredeti forráskód megtalálható itt: &lt;a href=&quot;https://github.com/lcsondes/sch-matrix/&quot;&gt;https://github.com/lcsondes/sch-matrix&lt;/a&gt;.&lt;br&gt;&lt;br&gt;</translation>
     </message>
     <message>
-        <location filename="src/gui/aboutwindow.cpp" line="56"/>
+        <location filename="src/gui/aboutwindow.cpp" line="57"/>
         <source>, </source>
         <translation></translation>
     </message>
     <message>
-        <location filename="src/gui/aboutwindow.cpp" line="57"/>
+        <location filename="src/gui/aboutwindow.cpp" line="58"/>
         <source>About Qt...</source>
         <translation>A Qt névjegye...</translation>
     </message>
     <message>
-        <location filename="src/gui/aboutwindow.cpp" line="58"/>
+        <location filename="src/gui/aboutwindow.cpp" line="59"/>
         <source>About Lua...</source>
         <translation>A Lua névjegye...</translation>
     </message>
     <message>
-        <location filename="src/gui/aboutwindow.cpp" line="59"/>
-        <location filename="src/gui/aboutwindow.cpp" line="107"/>
+        <location filename="src/gui/aboutwindow.cpp" line="60"/>
+        <location filename="src/gui/aboutwindow.cpp" line="108"/>
         <source>OK</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="src/gui/aboutwindow.cpp" line="82"/>
+        <location filename="src/gui/aboutwindow.cpp" line="83"/>
         <source>Copyright © 1994-2015 Lua.org, PUC-Rio.
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
