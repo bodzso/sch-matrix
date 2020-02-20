@@ -75,7 +75,7 @@ int main(int argc,char** argv)
     if(!english)
     {
         auto qtTrans = new QTranslator(&app);
-        qtTrans->load("qt_hu", "translations");
+        qtTrans->load("qt_hu", QLibraryInfo::location(QLibraryInfo::TranslationsPath));
         app.installTranslator(qtTrans);
 
         auto myTrans = new QTranslator(&app);
