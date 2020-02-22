@@ -63,7 +63,7 @@
 \item[p]Aktuális képkocka hossza
 \item[q]Legelső képkockára ugrás
 \item[r]Előző keyframe-re ugrás
-\item[s]Előbő képkockára lépés
+\item[s]Előző képkockára lépés
 \item[t]Lejátszás/megállítás
 \item[u]Következő képkockára lépés
 \item[v]Következő keyframe-re ugrás
@@ -146,7 +146,7 @@ Keyframe-nek nevezünk egy olyan időpontot, melyben rögzítve vannak a klipek 
 \end{wrapfigure}
 Itt lehet megadni a színeket. Színkeverésnél a teljes RGBA8888 színtér rendelkezésedre áll, de ne feledd, hogy a Mátrix az RGB333 színtért képes megjeleníteni. Segítségként a Schönherz képén levő animáció már kerekített színekkel jelenik meg (egyéb klipeknél nem).
 
-Ha bal egérgombbal rákattintasz a jobboldali részen egy színre, az a baloldalt kijelölt színt leváltja (baloldalt szín kijelölése szintén bal klikkel történik). Jobb kattintással megnyithatod a színkeverő ablakot, melyben új színt adhatsz meg. A pepitaminta az átlátszóság szemléltetésére szolgál (alapértelmezettként a legalsó sor teljesen átlátszó színeket tartalmaz).
+Ha bal egérgombbal rákattintasz a jobboldali részen egy színre, az a baloldalt kijelölt színt leváltja (baloldalt szín kijelölése szintén bal klikkel történik). Jobb kattintással megnyithatod a színkeverő ablakot, melyben új színt adhatsz meg. A pepita minta az átlátszóság szemléltetésére szolgál (alapértelmezettként a legalsó sor teljesen átlátszó színeket tartalmaz).
 
 A baloldalt fent található szín (a képen piros) a bal egérgombhoz, az alatta található (a képen átlátszó zöld) a jobb egérgombhoz van rendelve rajzoláskor.
 
@@ -182,9 +182,9 @@ A második és harmadik oszlop reméljük, magától értetődik: a második osz
 \end{wrapfigure}
 A klipek a listában levő sorrendjük alapján takarják el egymást rajzoláskor (a listában előrébb levő eltakarja az utána levőt, valamint a tartalmazó klip képkockái eltakarják a tartalmazott klipeket). A sorrend megváltoztatására a j és k jelzésű gombok szolgálnak.
 
-Az l és m gombok a jobbklikkes menü megfelelő menüpontjainak felelnek meg: az l új klipet ágyaz be a kijelölt klipbe, az m pedig eltávolítja a kijelölt klipet.
+Az l és m gombok a jobb klikkes menü megfelelő menüpontjainak felelnek meg: az l új klipet ágyaz be a kijelölt klipbe, az m pedig eltávolítja a kijelölt klipet.
 
-A klipek jobb-klikkes menüjében külön említést érdemel a Paraméterek menüpont. Itt beállíthatod, hogy a klip mikor kezdődjön a szülőjében (időbeli ``eltolást'' csak ilyen módon lehet megtenni beágyazás után), illetve megadhatod a beágyazás helyét. Az itt beállított koordináták eltolják az összes keyframe-et is, ez szintén hasznos lehet.
+A klipek jobb klikkes menüjében külön említést érdemel a Paraméterek menüpont. Itt beállíthatod, hogy a klip mikor kezdődjön a szülőjében (időbeli ``eltolást'' csak ilyen módon lehet megtenni beágyazás után), illetve megadhatod a beágyazás helyét. Az itt beállított koordináták eltolják az összes keyframe-et is, ez szintén hasznos lehet.
 
 \section{Animációkezelés}
 \begin{wrapfigure}{r}{0.75\textwidth}
@@ -221,7 +221,7 @@ A QP4 egy új szöveges formátum (leírása a függelékben), vele ekvivalens a
 
 Szintén a Fájl menüben lehetőséged van hang hozzárendelésére az animációdhoz (MP3 vagy OGG formátumban).
 \section{Az animációk beadása}
-Az animációkat a Qpahonlapon megadott módon és helyre kell feltölteni. Győződj meg róla, hogy megfelelő hangfájlt töltöttél be, nézd végig az animációdat, és ha mindent rendben találsz, a {\bf Fájl} menüből válaszd az {\bf Exportálás beküldésre} funkciót. Az elmentett .q4x fájlban megtalálható a hang is, így elég csupán ezt a fájlt feltölteni.
+Az animációkat a Qpa honlapon megadott módon és helyre kell feltölteni. Győződj meg róla, hogy megfelelő hangfájlt töltöttél be, nézd végig az animációdat, és ha mindent rendben találsz, a {\bf Fájl} menüből válaszd az {\bf Exportálás beküldésre} funkciót. Az elmentett .q4x fájlban megtalálható a hang is, így elég csupán ezt a fájlt feltölteni.
 \clearpage
 \section{Függelék: A QP4 formátum}
 A QP4 formátum sokkal többet tud a régi QPA formátumnál, ugyanis programnyelv! :)
@@ -256,7 +256,7 @@ rootclip("main")
 Kész is vagy. A biztonság kedvéért nézd meg az AnimEditorban is az animációt, mielőtt exportálod!
 \clearpage
 \subsection{QP4 programozóknak}
-A QP4 Lua 5.3.5-el fut. A Luát update-eltem 5.3.5-re a 2012-es állapothoz képest, ez a bit32 libraryt megszünteti, ami eltörhet egyes régi animációkat. A Q4X formátum ezért verziót lépett 2-re.
+A QP4 Lua 5.3.5-el fut. A Luát frissítettem 5.3.5-re a 2012-es állapothoz képest, ez a bit32 libraryt megszünteti, ami eltörhet egyes régi animációkat. A Q4X formátum ezért verziót lépett 2-re.
 \\
 \\Ez egy lehetséges workaround régi animációkhoz, ha berakod a .qp4 elejére:
 \begin{verbatim}
